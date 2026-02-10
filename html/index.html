@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Koumarianos Appearance</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="main-menu" class="hidden">
+        <div class="main-menu-container">
+            <div class="main-menu-header">
+                <h2>APPEARANCE</h2>
+            </div>
+            <div class="main-menu-options">
+                <button class="main-menu-btn" id="btn-main-creator">
+                    <span class="label">CHARACTER CREATOR</span>
+                </button>
+                <button class="main-menu-btn" id="btn-main-clothing">
+                    <span class="label">CLOTHING & OUTFITS</span>
+                </button>
+                <button class="main-menu-btn btn-close-main" id="btn-main-close">
+                    <span class="label">CLOSE</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div id="app" class="hidden">
+        <div class="container">
+            <div class="nav-panel">
+                <div class="nav-header">
+                    <h2 id="menu-title">CHARACTER CREATOR</h2>
+                    <div class="forced-indicator" id="forced-indicator">REQUIRED</div>
+                </div>
+                
+                <div class="nav-sections"></div>
+                
+                <div class="nav-footer">
+                    <button class="btn btn-primary" id="btn-save">SAVE</button>
+                    <button class="btn btn-success" id="btn-set-default">SET DEFAULT</button>
+                    <button class="btn btn-info" id="btn-load-default">LOAD DEFAULT</button>
+                    <button class="btn btn-danger" id="btn-close">CLOSE</button>
+                </div>
+            </div>
+            
+            <div class="content-panel">
+                <div class="content-header">
+                    <h3 id="section-title">Heritage</h3>
+                </div>
+                
+                <div class="content-body" id="content-body"></div>
+                
+                <div class="camera-controls">
+                    <div class="camera-group">
+                        <button class="btn-icon" id="cam-rotate-left">LEFT</button>
+                        <button class="btn-icon" id="cam-rotate-right">RIGHT</button>
+                    </div>
+                    <div class="camera-group">
+                        <button class="btn-icon" id="cam-face">FACE</button>
+                        <button class="btn-icon" id="cam-body">BODY</button>
+                        <button class="btn-icon" id="cam-legs">LEGS</button>
+                        <button class="btn-icon" id="cam-feet">FEET</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>
